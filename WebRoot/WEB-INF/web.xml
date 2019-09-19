@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Upfile</servlet-name>
+    <servlet-class>com.Video.action.Upfile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Getvideos</servlet-name>
+    <servlet-class>com.Video.action.Getvideos</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sqlconnect</servlet-name>
+    <servlet-class>com.Video.action.sqlconnect</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Sql</servlet-name>
+    <servlet-class>com.Video.action.Sql</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Getsingle</servlet-name>
+    <servlet-class>com.Video.action.Getsingle</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Getcat</servlet-name>
+    <servlet-class>com.Video.action.Getcat</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Inser</servlet-name>
+    <servlet-class>com.Video.action.Inser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.Video.action.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.Video.action.Register</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Upfile</servlet-name>
+    <url-pattern>/Upfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Getvideos</servlet-name>
+    <url-pattern>/Getvideos</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sqlconnect</servlet-name>
+    <url-pattern>/sqlconnect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Sql</servlet-name>
+    <url-pattern>/Sql</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Getsingle</servlet-name>
+    <url-pattern>/Getsingle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Getcat</servlet-name>
+    <url-pattern>/Getcat</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Inser</servlet-name>
+    <url-pattern>/Inser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

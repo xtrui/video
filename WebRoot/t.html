@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>t.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+   <form action="Inser"  method="post"   >
+            视频标题：<input type="text" name="Title" id="Title">
+            <br /><br /><br /><br />
+            
+            视频简介：<textarea name="Jj" id="Jj" maxlength="200"  cols="50" rows="10"></textarea>
+            <br /><br />
+            
+            类别：<select name="Cat" id="Cat">
+                    <option value ="dy">电影</option>
+                    <option value ="dm">动漫</option>
+                    <option value="zy">综艺</option>
+                    <option value="ty">体育</option>
+                    <option value="dsj">电视剧</option>
+                  </select>
+            <br /><br />
+            <input type="button" id="mm" value="提交" onclick="sub();" />
+        </form>
+        <p id="p1"></p>
+  </body>
+</html>
+<script>
+    function sub(){
+        var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+       p1.innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("POST","http://laptop-tianrui:8080/Video/Inser",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("Title="+Title.value+"&Jj="+Jj.value+"&Cat="+Cat.value);
+}
+</script>
